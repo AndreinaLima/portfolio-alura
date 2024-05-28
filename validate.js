@@ -86,3 +86,18 @@ formContact.addEventListener('submit', function(event) {
     event.preventDefault(); // Evita o envio do formulário se houver erros
   }
 });
+
+// ADICIONANDO EFEITO
+
+ document.addEventListener("DOMContentLoaded", function () {
+   const text = document.querySelector(".text-animation")
+   const image = document.querySelector(".image-animation")
+
+   setTimeout(() => {
+     text.classList.add("show")
+   }, 500)
+
+   setTimeout(() => {
+     image.classList.add("show")
+   }, 1000)
+ })

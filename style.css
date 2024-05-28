@@ -95,7 +95,7 @@ nav {
 
 .title__bio {
   font-weight: 700;
-  font-size: 52px;
+  font-size: 30px;
   line-height: 61.05px;
   padding-bottom: 24px;
 }
@@ -195,6 +195,10 @@ nav {
 .hobbies__img,
 .hobbies__name {
   padding-left: 16px;
+}
+
+.skills__img {
+  width: 50px;
 }
 
 .skills__name {
@@ -478,6 +482,52 @@ input:invalid {
   color: var(--color-text0);
   line-height: normal;
 }
+
+/* ANIMAÇÃO */
+
+ .text-animation {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease, transform 1s ease;
+      }
+
+  .image-animation {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease, transform 1s ease;
+        margin-top: 20px;
+      }
+      
+      .show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+.typing-animation {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(40, end), blink-caret 0.75s step-start infinite;
+      }
+
+         @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+         @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: rgb(255, 0, 140);
+        }
+      }
+
+
 
 /* #RESPONSIVO */
 
